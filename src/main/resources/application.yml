@@ -8,6 +8,10 @@ spring:
   application:
     name: rabbitmq
   rabbitmq:
+#    host: 192.168.1.161
+#    port: 15672
+#    username: xyq
+#    password: xyq123456!
     listener:
       simple:
         batch-size: 10
