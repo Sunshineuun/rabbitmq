@@ -1,0 +1,16 @@
+logging:
+  level:
+    root: info
+  config: classpath:logback-config.xml
+  file:
+    path: /tmp/logs
+spring:
+  application:
+    name: rabbitmq
+  rabbitmq:
+    listener:
+      simple:
+        batch-size: 10
+        consumer-batch-enabled: true
+server:
+  port: 8002
