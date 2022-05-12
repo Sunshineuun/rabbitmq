@@ -1,6 +1,6 @@
 package com.qiusm.rabbitmq.demo.exchange.simple;
 
-import com.qsm.rabbitmq.RabbitMQUtils;
+import com.qiusm.rabbitmq.demo.exchange.RabbitMQUtils;
 import com.rabbitmq.client.*;
 
 /**

@@ -1,6 +1,6 @@
 package com.qiusm.rabbitmq.demo.exchange.fanout;
 
-import com.qsm.rabbitmq.RabbitMQUtils;
+import com.qiusm.rabbitmq.demo.exchange.RabbitMQUtils;
 import com.rabbitmq.client.AMQP;
 import com.rabbitmq.client.Channel;
 import com.rabbitmq.client.Connection;
