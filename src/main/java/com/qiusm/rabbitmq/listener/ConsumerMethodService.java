@@ -26,7 +26,8 @@ public class ConsumerMethodService {
      * @param message message
      */
     @RabbitHandler
-    @RabbitListener(queues = "testQueue", ackMode = "MANUAL", concurrency = "3")
+    @RabbitListener(queues = "testQueue", ackMode = "MANUAL", concurrency = "1", autoStartup = "false", id =
+            "testQueueReceiver")
     public void testQueueReceiver(String object, Channel channel, Message message) {
         try {
             log.info("接收到消息：object: {}", object);
@@ -48,7 +49,8 @@ public class ConsumerMethodService {
      * @param channel  channel
      */
     @RabbitHandler
-    @RabbitListener(queues = "testQueue", ackMode = "MANUAL", concurrency = "3")
+    @RabbitListener(queues = "testQueue", ackMode = "MANUAL", concurrency = "1", autoStartup = "false", id =
+            "testQueueReceiverBatch")
     public void testQueueReceiverBatch(List<Message> messages, Channel channel) {
         try {
             for (Message message : messages) {
